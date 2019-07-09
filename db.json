@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Competition",
+      "body": "A “Share” vs. “Like” post is a great way for people to engage with your brand by offering their opinion (which Facebook users love to do!). Basically, this post offers two different options. A person can “Like” the post to vote for option A or “Share” the post for option B.",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "The Poll",
+      "body": "The poll is a simple but effective way to get your Fans to involve themselves in your brand. This post includes 2-4 options, and then asks Fans for their favorite. It’s also a great way to get some free market research!",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "Ask for it",
+      "body": "Sometimes the simplest, most straightforward idea is the best. Just like with Twitter, in which asking for a retweet increases the chance of it being done by 23 times, being clear about what you want can yield some great rewards.",
+      "author": "typicode"
+    },
+    {
+      "title": "sef",
+      "body": "wegw",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

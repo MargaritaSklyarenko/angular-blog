@@ -1,0 +1,30 @@
+<!-- How can I show backgroubd without ^ -->
+<div class="modal">
+    <div class="modal-dialog" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" (click)="goBack()" class="close" type="button">
+                    <clr-icon aria-hidden="true" shape="close"></clr-icon>
+                </button>
+                <h3 class="modal-title capitalize">{{action}} Post</h3>
+            </div>
+            <div class="modal-body">
+                <form clrForm [formGroup] = "fullPostControl">
+                    <clr-input-container class="clr-row">
+                        <label class="clr-col-md-2">Post title:</label>
+                        <input class="clr-col-md-10" formControlName = "title" clrInput type="text" placeholder="Type title here" required/>
+                    </clr-input-container>
+                    <clr-textarea-container class="clr-row">
+                        <label class="clr-col-md-2">Post:</label>
+                        <textarea clrTextarea class="clr-col-md-10" formControlName = "body" rows="10" placeholder="Type post here" required></textarea>
+                    </clr-textarea-container>  
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button (click)="goBack()" class="btn btn-outline" type="button">Cancel</button>
+                <button (click)="handleAddEdit()" class="btn btn-primary capitalize" type="button">{{action}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop" aria-hidden="true"></div>

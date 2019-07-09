@@ -1,0 +1,12 @@
+.capitalize {
+    text-transform: capitalize;
+ }
+
+.modal .clr-textarea,
+.modal .clr-input {
+    width: 100%;
+}
+
+.clr-form:focus {
+    outline: none;
+}

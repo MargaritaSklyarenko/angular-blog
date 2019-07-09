@@ -1,0 +1,36 @@
+<div class="clr-row clr-justify-content-center">
+    <div  *ngFor="let post of posts" class="clr-col-lg-7 clr-col-12">
+        <div class="card clr-align-self-center">
+            <div class="card-header">
+                {{post.title | uppercase}}
+            </div>
+            <div class="card-block">
+                <div class="card-text">
+                    {{post.body}}
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="clr-row clr-justify-content-between">
+                    <button class="btn btn-sm btn-link show-more-btn" routerLink="/detail/{{post.id}}">Show more..</button>
+                    <div>
+                        <button class="btn btn-sm btn-link" routerLink="/home/edit/{{post.id}}"><clr-icon shape="form"></clr-icon></button>
+                        <button class="btn btn-sm btn-link"  routerLink="/home/delete/{{post.id}}"><clr-icon shape="trash"></clr-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-container [ngSwitch]="modal">
+    <app-delete-post *ngSwitchCase="'delete'" [postId]="id"></app-delete-post>
+    <app-add-post *ngSwitchCase="'add'"></app-add-post>
+    <app-add-post *ngSwitchCase="'edit'"></app-add-post>
+</ng-container>
+
+
+
+
+
+
+    

@@ -1,0 +1,20 @@
+<div class="modal">
+    <div class="modal-dialog modal-lg" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" (click)="goBack()" class="close" type="button">
+                    <clr-icon aria-hidden="true" shape="close"></clr-icon>
+                </button>
+                <h3 class="modal-title">Delete post</h3>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this post?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" (click)="goBack()" type="button">Cancel</button>
+                <button class="btn btn-primary" (click)="deletePost()" type="button">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop" aria-hidden="true"></div>
